@@ -23,9 +23,9 @@
 ### Description
 
   - Himalayan Bliss has been in existence since 1960 and operating as a resort since 1981, Himalayan Bliss is spread across the lush green land of the mountain side of Uttarakhand, with elite facilities.
-  - We have used django for the backend along with sqlite as the database.
-  - We have used HTML, CSS, JAVASCRIPT, BOOTSTRAP for our frontend web pages.
-  - We are using django-allauth in order to authenticate users.We have also used razorpayAPI In order to enable payments. We make a post request to api from client side.
+  - The website has the functionality of Room booking on specific dates according to availability.
+  - User can also print their bookings. Different pages relating to location, tourist spots in Nainital, Booked rooms view are also added.
+  - Django-allauth is used in order to authenticate users. RazorpayAPI in test mode is used in order to enable payments. A post request is made to api from client side.
 
 <img src="https://github.com/Anupamladdha/Himaliyan_Bliss/blob/main/Screenshots/flowchart.png" height = 450/> 
       
