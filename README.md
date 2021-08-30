@@ -40,12 +40,12 @@
 
 
 ### Tech Stack : 
-#### Server Side : 
+* Server Side : 
    - Django
    - SQLite
    - Razorpay
    
-#### Client Side : 
+* Client Side : 
  - HTML, CSS, JS
  - Bootstrap
 
