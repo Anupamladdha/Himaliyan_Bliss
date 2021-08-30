@@ -24,7 +24,7 @@
 
   - Himalayan Bliss has been in existence since 1960 and operating as a resort since 1981, Himalayan Bliss is spread across the lush green land of the mountain side of Uttarakhand, with elite facilities.
   - The website has the functionality of Room booking on specific dates according to availability.
-  - User can also print their bookings. Different pages relating to location, tourist spots in Nainital, Booked rooms view are also added.
+  - User can also print their bookings. Different pages relating to location, tourist spots in Nainital, Booked rooms list page, Gallery page, Contact us page and Event booking page are also added.
   - Django-allauth is used in order to authenticate users. RazorpayAPI in test mode is used in order to enable payments. A post request is made to api from client side.
 
 <img src="https://github.com/Anupamladdha/Himaliyan_Bliss/blob/main/Screenshots/flowchart.png" height = 450/> 
