@@ -30,7 +30,7 @@
 [Project Overview](https://docs.google.com/presentation/d/1yiEVSrla-NAencIITmwhMaNbVrFSWHUFhGFRk4L4Joc/edit#slide=id.p2)
 
 ### Visuals
-<img src="https://github.com/Anupamladdha/VIDEO_TO_SUMMARIZED_TEXT/blob/main/Screenshots/Output1.png" height = 450/> 
+<img src="https://github.com/Anupamladdha/Himaliyan_Bliss/blob/main/Screenshots/homepage.png" height = 450/> 
 
 
 ### Tech Stack : 
