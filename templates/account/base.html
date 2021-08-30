@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block head_title %}{% endblock %}</title>
+    {% block extra_head %}
+    
+    {% endblock %}
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+    </style>
+  </head>
+  <!-- background-image: url('https://cf.bstatic.com/images/hotel/max1024x768/206/206648187.jpg'); -->
+  <body style="
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-family: 'Playfair Display', serif;">
+    {% block body %}
+
+    {% comment %} {% if messages %}
+    <div>
+      <strong>Messages:</strong>
+      <ul>
+        {% for message in messages %}
+        <li>{{message}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %} {% endcomment %}
+<!-- 
+    <div>
+      <strong>Menu:</strong>
+      <ul>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
+        <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
+        {% else %}
+        <li><a href="{% url 'account_login' %}">Sign In</a></li>
+        <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+        {% endif %}
+      </ul>
+    </div> -->
+    {% block content %}
+    
+    {% endblock %}
+    {% endblock %}
+    {% block extra_body %}
+    {% endblock %}
+  </body>
+</html>

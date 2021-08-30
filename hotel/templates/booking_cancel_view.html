@@ -1,0 +1,96 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shrevani Hilltop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% comment %} <link rel="stylesheet" href="{% static 'hotel/CSS/room_detail_view.css' %}"> {% endcomment %}
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "{% static 'hotel/images/logo.png' %}" type = "image/png">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Playfair Display', serif;
+            }
+            .myButton {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        </style>
+    </head>
+    <body >
+            {% comment %} <section class = "rooms sec-width" id = "rooms">
+                
+                <div class = "rooms-container">
+                    <!-- single room -->
+                    <article class = "room">
+                        <div class = "room-image">
+                            <img src = "{% static 'hotel/images/img1.jpg' %}" alt = "room image">
+                        </div>
+                        <div class = "room-text">
+                            <h3>{{room_category}}</h3>
+                            <ul>
+                                <li>
+                                    <i class = "fas fa-arrow-alt-circle-right"></i>
+                                    Lorem ipsum dolor sit amet.
+                                </li>
+                                <li>
+                                    <i class = "fas fa-arrow-alt-circle-right"></i>
+                                    Lorem ipsum dolor sit amet.
+                                </li>
+                                <li>
+                                    <i class = "fas fa-arrow-alt-circle-right"></i>
+                                    Lorem ipsum dolor sit amet.
+                                </li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                            <p class = "rate">
+                                <span>&#8377; 10000.00 /</span> Per Night
+                            </p>
+                            
+                        </div>
+                    </article>
+                    
+                </div>
+            </section> {% endcomment %}
+
+    <div style="display:flex; height:100vh; justify-content:center;align-items:center;background-color: #2e2e2e;" class = "book">
+        <form style="text-align:center" class = "book-form" action='' method="POST">
+            {% csrf_token %}
+            
+            <h2 style="color: white;font-size: 3rem;">Are you sure you want to cancel this Booking?</h2>
+            <br>
+            <div class = "form-item">
+                <input type = "submit" class = "myButton" value = "Cancel the Booking">
+            </div>
+        </form>
+    </div>
+        
+        
+        <script src="{% static 'hotel/JS/script.js' %}"></script>
+    </body>
+</html>

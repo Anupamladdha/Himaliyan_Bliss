@@ -1,0 +1,95 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Himaliyan Bliss</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'hotel/CSS/room_detail_view.css' %}">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "{% static 'hotel/images/favicon.ico' %}" type = "image/png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        
+
+        <section class = "rooms sec-width" id = "rooms">
+            
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "/static/hotel/images/{{category}}.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>{{room_category}}</h3>
+                        {% for detail in room_detail %}
+                        <h4> &#8226;  {{detail}}</h4>
+                        {% endfor %}
+                        <p>{{room_desc}}</p>
+                        <br>
+                        <br>
+                        <p class = "rate">
+                            <span>&#8377; {{room_rate}} /</span> Per Night
+                        </p>
+                        
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+
+    <div class = "book">
+        <form class = "book-form" action='' method="POST">
+            {% csrf_token %}
+            <div class = "form-item">
+                <label for="id_check_in">Check In Date: </label>
+                <input type="date" id="id_check_in" name="check_in">
+            </div>
+            <div class = "form-item">
+                <label  for="id_check_out">Check Out Date: </label>
+                <input type="date" id="id_check_out" name="check_out">
+            </div>
+            
+            <div class = "form-item">
+                <input type = "submit" class = "btn" value = "Book Now">
+            </div>
+        </form>
+    </div>
+        
+        <script>
+        $(function(){
+            var dtToday = new Date();
+            
+            var month = dtToday.getMonth() + 1;
+            var day = dtToday.getDate()+1;
+            var year = dtToday.getFullYear();
+            if(month < 10)
+                month = '0' + month.toString();
+            if(day < 10)
+                day = '0' + day.toString();
+            
+            var maxDate = year + '-' + month + '-' + day;
+            $('#id_check_in').attr('min', maxDate);
+            
+        });
+        $(function(){
+            var dtToday = new Date();
+            
+            var month = dtToday.getMonth() + 1;
+            var day = dtToday.getDate()+2;
+            var year = dtToday.getFullYear();
+            if(month < 10)
+                month = '0' + month.toString();
+            if(day < 10)
+                day = '0' + day.toString();
+            
+            var maxDate = year + '-' + month + '-' + day;
+            
+            $('#id_check_out').attr('min', maxDate);
+        });
+        </script>
+        <script src="{% static 'hotel/JS/script.js' %}"></script>
+    </body>
+</html>

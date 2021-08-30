@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Freebie: 4 Bootstrap Gallery Templates</title>
+
+{% block links %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'gallery/css/fluid-gallery.css' %}">
+{% endblock links %}
+
+
+</head>
+<body>
+{% block content %}
+<div class="container gallery-container">
+
+    <h1 style="font-family: 'Playfair Display', serif; color: #f9d342; border-bottom: 1px solid #f9d342;">GALLERY</h1>
+
+    {% comment %} <p class="page-description text-center">Fluid Layout With Overlay Effect</p> {% endcomment %}
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img1.jpg' %}">
+                    <img src="{% static 'gallery/images/img1.jpg' %}" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img2.jpg' %}">
+                    <img src="{% static 'gallery/images/img2.jpg' %}" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img3.jpg' %}">
+                    <img src="{% static 'gallery/images/img3.jpg' %}" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <a class="lightbox" href="{% static 'gallery/images/img4.jpg' %}">
+                    <img src="{% static 'gallery/images/img4.jpg' %}" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img5.jpg' %}">
+                    <img src="{% static 'gallery/images/img5.jpg' %}" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img6.jpg' %}">
+                    <img src="{% static 'gallery/images/img6.jpg' %}" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img7.jpg' %}">
+                    <img src="{% static 'gallery/images/img7.jpg' %}" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img8.jpg' %}">
+                    <img src="{% static 'gallery/images/img8.jpg' %}" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img9.jpg' %}">
+                    <img src="{% static 'gallery/images/img9.jpg' %}" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <a class="lightbox" href="{% static 'gallery/images/img10.jpg' %}">
+                    <img src="{% static 'gallery/images/img10.jpg' %}" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img11.jpg' %}">
+                    <img src="{% static 'gallery/images/img11.jpg' %}" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img12.jpg' %}">
+                    <img src="{% static 'gallery/images/img12.jpg' %}" alt="Rails">
+                </a>
+            </div>
+            
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img1.jpg' %}">
+                    <img src="{% static 'gallery/images/img1.jpg' %}" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img14.jpg' %}">
+                    <img src="{% static 'gallery/images/img14.jpg' %}" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img15.jpg' %}">
+                    <img src="{% static 'gallery/images/img15.jpg' %}" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <a class="lightbox" href="{% static 'gallery/images/img16.jpg' %}">
+                    <img src="{% static 'gallery/images/img16.jpg' %}" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img17.jpg' %}">
+                    <img src="{% static 'gallery/images/img17.jpg' %}" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'gallery/images/img18.jpg' %}">
+                    <img src="{% static 'gallery/images/img18.jpg' %}" alt="Rails">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+{% endblock content %}
+</body>
+</html>

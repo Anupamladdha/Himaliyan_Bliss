@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Title</title>
+        <style type="text/css">
+            body {
+                font-weight: 200;
+                font-size: 14px;
+                font-family: 'Playfair Display', serif;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;  
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color:#f9d342; /* old IE */
+                background-color: #f9d342; /* Modern Browsers */
+            }
+            img{
+                margin-left: auto; 
+                margin-right: 0;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <p class='title'><strong>INVOICE</strong></p>
+            </div>
+        <div>
+        <div class='details'>
+            Bill From: Himalayan Bliss<br/>
+            <hr class='hrItem' />
+            Bill to: {{booking.user}}<br/>
+            <hr class='hrItem' />
+            Email: {{booking.user.email}}<br/>
+            <hr class='hrItem' />
+            Room Type: {{room_category}} <br/>
+            <hr class='hrItem' />
+            Amount:  Rs {{booking.amount}} <br/>
+            <hr class='hrItem' />
+            Check In: {{booking.check_in}} <br/>
+            <hr class='hrItem' />
+            Check out: {{booking.check_out}} <br/>
+            <hr class='hrItem' />
+            
+            
+            <img style="margin: 0 auto;" src="http://127.0.0.1:8000/static/hotel/images/invoice.png" height='300px' alt="sadasd">
+        
+        </div>
+    </div>
+    </body>
+</html>
