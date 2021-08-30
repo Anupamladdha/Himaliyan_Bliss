@@ -56,7 +56,7 @@
 ### Installation
 * Clone the repo
 ```bash
-git clone https://github.com/Anupamladdha/VIDEO_TO_SUMMARIZED_TEXT.git
+git clone https://github.com/Anupamladdha/Himaliyan_Bliss
 ```
 * Create a virtual environment and install all dependencies from the requirements.txt file
 ```bash
@@ -64,4 +64,12 @@ $ virtualenve your_env
 $ source your_env/bin/activate
 $ pip install -r requirements.txt
 ```
+* To start server
+```bash
+$ python manage.py createsuperuser
+$ python manage.py makemigrations
+$ python manage.py mirgate
+$ python manage.py runserver
+```
+
 
