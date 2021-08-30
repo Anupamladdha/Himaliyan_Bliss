@@ -23,14 +23,20 @@
 ### Description
 
   - Himalayan Bliss has been in existence since 1960 and operating as a resort since 1981, Himalayan Bliss is spread across the lush green land of the mountain side of Uttarakhand, with elite facilities.
-  - We have made a hotel booking website using Html, css, javascript, bootstrap, razorpay and django.
+  - We have used django for the backend along with sqlite as the database.
+  - We have used HTML, CSS, JAVASCRIPT, BOOTSTRAP for our frontend web pages.
+  - We are using django-allauth in order to authenticate users.We have also used razorpayAPI In order to enable payments. We make a post request to api from client side.
 
+<img src="https://github.com/Anupamladdha/Himaliyan_Bliss/blob/main/Screenshots/flowchart.png" height = 450/> 
       
 ### Presentation 
 [Project Overview](https://docs.google.com/presentation/d/1yiEVSrla-NAencIITmwhMaNbVrFSWHUFhGFRk4L4Joc/edit#slide=id.p2)
 
 ### Visuals
 <img src="https://github.com/Anupamladdha/Himaliyan_Bliss/blob/main/Screenshots/homepage.png" height = 450/> 
+<img src="https://github.com/Anupamladdha/Himaliyan_Bliss/blob/main/Screenshots/room_booking.png" height = 450/> 
+<img src="https://github.com/Anupamladdha/Himaliyan_Bliss/blob/main/Screenshots/rooms.png" height = 450/> 
+<img src="https://github.com/Anupamladdha/Himaliyan_Bliss/blob/main/Screenshots/payment.png" height = 450/> 
 
 
 ### Tech Stack : 
