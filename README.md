@@ -39,15 +39,15 @@
 <img src="https://github.com/Anupamladdha/Himaliyan_Bliss/blob/main/Screenshots/payment.png" height = 450/> 
 
 
-### Tech Stack : 
+### Tech Stack
 * Server Side : 
    - Django
    - SQLite
    - Razorpay
    
 * Client Side : 
- - HTML, CSS, JS
- - Bootstrap
+   - HTML, CSS, JS
+   - Bootstrap
 
 
     
